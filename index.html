@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>District 226 Toastmasters - Onboarding Hub</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tmBlue: '#004165',
+                        tmMaroon: '#772432',
+                        tmGray: '#A9B2B1',
+                        tmYellow: '#F2DF74',
+                        tmDarkBlue: '#002f4a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f8fafc;
+        }
+        /* Custom smooth scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #A9B2B1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #772432;
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased overflow-x-hidden min-h-screen flex flex-col justify-between">
+
+    <!-- Brand Conforming Header -->
+    <header class="w-full bg-tmBlue text-white px-6 py-4 flex flex-col md:flex-row justify-between items-center shadow-lg z-40 shrink-0 gap-4">
+        <div class="flex items-center gap-3">
+            <!-- Elegant Compass SVG Logo Only -->
+            <div class="bg-tmBlue p-1 rounded-xl flex items-center justify-center border border-tmGray/20 shadow-md">
+                <svg class="h-10 w-10 text-tmYellow" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="44" stroke="#F2DF74" stroke-width="4" fill="none"/>
+                    <circle cx="50" cy="50" r="36" stroke="#F2DF74" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="3 3" fill="none"/>
+                    <!-- Compass Rose Points -->
+                    <path d="M50 12 L54 44 L50 48 L46 44 Z" fill="#F2DF74"/> <!-- North -->
+                    <path d="M50 88 L46 56 L50 52 L54 56 Z" fill="#A9B2B1"/> <!-- South -->
+                    <path d="M88 50 L56 46 L52 50 L56 54 Z" fill="#A9B2B1"/> <!-- East -->
+                    <path d="M12 50 L44 54 L48 50 L44 46 Z" fill="#F2DF74"/> <!-- West -->
+                    <!-- Cardinal Directions Text -->
+                    <text x="47" y="24" fill="#F2DF74" font-family="sans-serif" font-size="10" font-weight="900">N</text>
+                    <circle cx="50" cy="50" r="4" fill="#F2DF74"/>
+                </svg>
+            </div>
+            <div>
+                <span class="text-[10px] text-tmGray block tracking-widest font-extrabold uppercase leading-none">Toastmasters International</span>
+                <h1 class="text-lg font-black text-tmYellow tracking-tight mt-1">District 226 Toastmasters — WhatsApp Onboarding Hub</h1>
+            </div>
+        </div>
+        <div class="flex items-center gap-3">
+            <a href="#quick-directory" class="text-xs bg-tmYellow hover:bg-yellow-300 text-tmBlue font-black px-4 py-2 rounded-xl shadow-md transition flex items-center gap-1.5">
+                <i data-lucide="grid" class="w-4 h-4"></i>
+                <span>Quick Reference</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-1 w-full max-w-7xl mx-auto p-4 md:p-6 lg:p-8 space-y-8">
+        
+        <!-- DISTRICT 226 BLUE-ONLY BRAND IDENTITY HERO BANNER -->
+        <div class="bg-gradient-to-r from-tmBlue via-tmBlue to-tmDarkBlue text-white rounded-3xl p-6 sm:p-8 border border-tmGray/40 shadow-xl flex flex-col md:flex-row justify-between items-center gap-6 relative overflow-hidden">
+            <!-- Decorative subtle background grid pattern -->
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#A9B2B1_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+            
+            <div class="relative z-10 space-y-3 flex-1 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 bg-tmYellow/15 border border-tmYellow/35 px-3.5 py-1.5 rounded-full">
+                    <span class="w-2 h-2 rounded-full bg-tmYellow animate-pulse"></span>
+                    <span class="text-[10px] font-extrabold uppercase tracking-widest text-tmYellow">Official District 226 Channel Portal</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-white leading-tight">
+                    District 226 Toastmasters
+                </h2>
+                <p class="text-sm sm:text-base font-semibold text-slate-300 max-w-2xl leading-relaxed">
+                    District 226 — serving members across <span class="text-tmYellow font-extrabold underline decoration-tmYellow/30 underline-offset-4">Maharashtra</span>
+                </p>
+            </div>
+            
+            <div class="relative z-10 bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-md max-w-md w-full md:w-auto text-center md:text-right flex flex-col justify-center items-center md:items-end gap-1 shadow-inner">
+                <span class="text-base sm:text-lg font-black text-tmYellow tracking-wide block">3 Cultures 1 Community</span>
+                <span class="text-[11px] font-black text-tmGray/90 hover:text-tmYellow transition duration-200 block tracking-tight mt-1">
+                    #LifelongLearningLimitlessLeadership
+                </span>
+            </div>
+        </div>
+
+        <!-- INTRO & INTERACTIVE PATHWAY CONFIGURATOR -->
+        <div class="bg-white rounded-3xl border border-tmGray/40 shadow-lg p-6 sm:p-8">
+            <div class="flex flex-col lg:flex-row gap-8 items-stretch">
+                
+                <!-- Left: Pathway selector -->
+                <div class="flex-1 flex flex-col justify-between gap-4">
+                    <div>
+                        <span class="bg-tmMaroon/10 text-tmMaroon px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest inline-block mb-3">District 226 Community Onboarding</span>
+                        <h2 class="text-3xl font-black text-tmBlue">What is your communication objective?</h2>
+                        <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                            Click on your communication objective below to dynamically configure your customized District 226 WhatsApp Setup. Check your recommended groups to join on the simulated mobile preview panel.
+                        </p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <button onclick="selectPathway(1)" id="pathway-btn-1" class="w-full text-left p-4 rounded-2xl border-2 border-tmMaroon bg-tmMaroon/5 transition flex items-center gap-4">
+                            <span class="w-6 h-6 rounded-full bg-tmMaroon text-white flex items-center justify-center font-black text-xs">01</span>
+                            <div class="flex-1">
+                                <h4 class="font-extrabold text-sm text-tmBlue">Key District Information Only</h4>
+                                <p class="text-[11px] text-slate-500 mt-0.5">I want clean official updates, zero chatting, and absolutely no message overload.</p>
+                            </div>
+                        </button>
+                        
+                        <button onclick="selectPathway(2)" id="pathway-btn-2" class="w-full text-left p-4 rounded-2xl border border-slate-200 hover:border-tmMaroon transition flex items-center gap-4">
+                            <span class="w-6 h-6 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center font-black text-xs">02</span>
+                            <div class="flex-1">
+                                <h4 class="font-extrabold text-sm text-tmBlue">Key Information + Geography Open Reach</h4>
+                                <p class="text-[11px] text-slate-500 mt-0.5">I want official updates and want to engage with Toastmasters within my geography.</p>
+                            </div>
+                        </button>
+
+                        <button onclick="selectPathway(3)" id="pathway-btn-3" class="w-full text-left p-4 rounded-2xl border border-slate-200 hover:border-tmMaroon transition flex items-center gap-4">
+                            <span class="w-6 h-6 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center font-black text-xs">03</span>
+                            <div class="flex-1">
+                                <h4 class="font-extrabold text-sm text-tmBlue">Key Information + Club Events</h4>
+                                <p class="text-[11px] text-slate-500 mt-0.5">I want official updates and curated notifications about across district club events of interest.</p>
+                            </div>
+                        </button>
+
+                        <button onclick="selectPathway(4)" id="pathway-btn-4" class="w-full text-left p-4 rounded-2xl border border-slate-200 hover:border-tmMaroon transition flex items-center gap-4">
+                            <span class="w-6 h-6 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center font-black text-xs">04</span>
+                            <div class="flex-1">
+                                <h4 class="font-extrabold text-sm text-tmBlue">Key Information + Division Collaborations</h4>
+                                <p class="text-[11px] text-slate-500 mt-0.5">I want official updates and want to coordinate directly within my Division.</p>
+                            </div>
+                        </button>
+
+                        <button onclick="selectPathway(5)" id="pathway-btn-5" class="w-full text-left p-4 rounded-2xl border border-slate-200 hover:border-tmMaroon transition flex items-center gap-4">
+                            <span class="w-6 h-6 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center font-black text-xs">05</span>
+                            <div class="flex-1">
+                                <h4 class="font-extrabold text-sm text-tmBlue">Key Information + Officer Exchanges</h4>
+                                <p class="text-[11px] text-slate-500 mt-0.5">I want official updates and support for my club officer role from fellow club officers.</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right: Visual Simulator representing selected setup -->
+                <div class="lg:w-96 bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <span class="text-[10px] font-black text-tmMaroon uppercase tracking-widest block mb-1">Interactive Groups Preview</span>
+                        <h4 id="pathway-result-title" class="text-lg font-black text-tmBlue">District Key Announcements</h4>
+                        <p id="pathway-result-desc" class="text-xs text-slate-500 mt-2 leading-relaxed">
+                            This option grants access to clean updates with zero general chatting. 
+                        </p>
+                    </div>
+
+                    <!-- Setup visual map cards representing the configured networks -->
+                    <div class="space-y-3 my-6">
+                        <div id="pb-announce" class="p-3 bg-white border-2 border-tmMaroon rounded-xl flex items-center gap-3 shadow-sm transition duration-300">
+                            <i data-lucide="megaphone" class="text-tmMaroon w-5 h-5 shrink-0"></i>
+                            <div>
+                                <span class="text-xs font-bold text-tmBlue block">Community Announcements</span>
+                                <span class="text-[9px] text-slate-400 block uppercase">Official updates only</span>
+                            </div>
+                        </div>
+
+                        <div id="pb-general" class="p-3 bg-white border border-slate-200 rounded-xl flex items-center gap-3 opacity-30 transition duration-300">
+                            <i data-lucide="users" class="text-tmBlue w-5 h-5 shrink-0"></i>
+                            <div>
+                                <span class="text-xs font-bold text-tmBlue block">General WhatsApp Group (Club Events)</span>
+                                <span class="text-[9px] text-slate-400 block uppercase">Curated updates via Division PR Focals about Club Events</span>
+                            </div>
+                        </div>
+
+                        <div id="pb-division" class="p-3 bg-white border border-slate-200 rounded-xl flex items-center gap-3 opacity-30 transition duration-300">
+                            <i data-lucide="git-branch" class="text-tmBlue w-5 h-5 shrink-0"></i>
+                            <div>
+                                <span class="text-xs font-bold text-tmBlue block">Division Specific WhatsApp Groups</span>
+                                <span class="text-[9px] text-slate-400 block uppercase">Managed by Division Council and open for Division Members</span>
+                            </div>
+                        </div>
+
+                        <div id="pb-geography" class="p-3 bg-white border border-slate-200 rounded-xl flex items-center gap-3 opacity-30 transition duration-300">
+                            <i data-lucide="globe" class="text-tmBlue w-5 h-5 shrink-0"></i>
+                            <div>
+                                <span class="text-xs font-bold text-tmBlue block">Geography Open WhatsApp Groups</span>
+                                <span class="text-[9px] text-slate-400 block uppercase">For Toastmasters General Interactions</span>
+                            </div>
+                        </div>
+
+                        <div id="pb-officer" class="p-3 bg-white border border-slate-200 rounded-xl flex items-center gap-3 opacity-30 transition duration-300">
+                            <i data-lucide="award" class="text-tmBlue w-5 h-5 shrink-0"></i>
+                            <div>
+                                <span class="text-xs font-bold text-tmBlue block">Officer Specific WhatsApp Group</span>
+                                <span class="text-[9px] text-slate-400 block uppercase">Club Officers interact about their role and seek support</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-tmBlue text-white p-3.5 rounded-xl border border-tmGray/20 flex gap-2.5 items-start">
+                        <i data-lucide="shield-check" class="text-tmYellow w-5 h-5 mt-0.5 shrink-0"></i>
+                        <p id="pathway-result-tip" class="text-[10px] text-slate-200 leading-snug">
+                            Community helps us maintain clear communication.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PERSONA RECOMMENDATIONS ENGINE -->
+        <div class="bg-tmBlue text-white rounded-3xl p-6 sm:p-8 border border-tmGray/30 shadow-xl">
+            <div class="flex flex-col lg:flex-row gap-8 items-stretch">
+                
+                <!-- Left: Persona buttons -->
+                <div class="lg:w-[45%] flex flex-col justify-between">
+                    <div>
+                        <span class="bg-tmMaroon text-tmYellow px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest inline-block mb-3">Which Groups are for me?</span>
+                        <h2 class="text-3xl font-black text-white">Find Your WhatsApp Groups Combinations as per your role</h2>
+                        <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                            Toastmasters District 226 Community has various WhatsApp groups based on your role. Select yours to generate Group recommendations to join.
+                        </p>
+                    </div>
+
+                    <!-- Persona selection cards -->
+                    <div class="grid grid-cols-1 gap-2.5 mt-6">
+                        <button onclick="setPersona('member-standard')" id="p-btn-member-standard" class="w-full text-left p-3.5 rounded-xl border border-tmMaroon bg-tmMaroon/20 flex items-center justify-between transition hover:border-tmYellow duration-200">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="user-check" class="text-tmYellow w-4 h-4"></i>
+                                <span class="text-xs font-extrabold uppercase tracking-wide">MEMBER (Minimal District Announcements)</span>
+                            </div>
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-tmYellow"></i>
+                        </button>
+
+                        <button onclick="setPersona('member-geography')" id="p-btn-member-geography" class="w-full text-left p-3.5 rounded-xl border border-tmGray/20 flex items-center justify-between transition hover:border-tmYellow duration-200">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="globe" class="text-tmGray w-4 h-4"></i>
+                                <span class="text-xs font-extrabold uppercase tracking-wide text-slate-200">MEMBER (Geography Reach)</span>
+                            </div>
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-tmGray"></i>
+                        </button>
+
+                        <button onclick="setPersona('member-explore')" id="p-btn-member-explore" class="w-full text-left p-3.5 rounded-xl border border-tmGray/20 flex items-center justify-between transition hover:border-tmYellow duration-200">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="compass" class="text-tmGray w-4 h-4"></i>
+                                <span class="text-xs font-extrabold uppercase tracking-wide text-slate-200">MEMBER (Active Explorer)</span>
+                            </div>
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-tmGray"></i>
+                        </button>
+
+                        <button onclick="setPersona('growth-officer')" id="p-btn-growth-officer" class="w-full text-left p-3.5 rounded-xl border border-tmGray/20 flex items-center justify-between transition hover:border-tmYellow duration-200">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="award" class="text-tmGray w-4 h-4"></i>
+                                <span class="text-xs font-extrabold uppercase tracking-wide text-slate-200">PRES, VPE, VPM, VPPR</span>
+                            </div>
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-tmGray"></i>
+                        </button>
+
+                        <button onclick="setPersona('admin-officer')" id="p-btn-admin-officer" class="w-full text-left p-3.5 rounded-xl border border-tmGray/20 flex items-center justify-between transition hover:border-tmYellow duration-200">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check-square" class="text-tmGray w-4 h-4"></i>
+                                <span class="text-xs font-extrabold uppercase tracking-wide text-slate-200">SEC, TRE, SAA</span>
+                            </div>
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-tmGray"></i>
+                        </button>
+
+                        <button onclick="setPersona('district-officer')" id="p-btn-district-officer" class="w-full text-left p-3.5 rounded-xl border border-tmGray/20 flex items-center justify-between transition hover:border-tmYellow duration-200">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="shield" class="text-tmGray w-4 h-4"></i>
+                                <span class="text-xs font-extrabold uppercase tracking-wide text-slate-200">DISTRICT OFFICER</span>
+                            </div>
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-tmGray"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right: Active setup profile checklist & quick action tools -->
+                <div class="flex-1 bg-tmDarkBlue/50 border border-tmGray/20 rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between border-b border-tmGray/30 pb-4 mb-4">
+                            <div>
+                                <span class="text-[10px] text-tmGray font-extrabold uppercase tracking-widest block">Recommended Groups in Community</span>
+                                <h4 id="persona-display-title" class="text-xl font-black text-tmYellow">MEMBER (Minimal District Announcements)</h4>
+                            </div>
+                            <span class="text-[10px] bg-tmMaroon text-white font-extrabold px-3 py-1 rounded-full uppercase border border-tmYellow/30">Choose Your Groups</span>
+                        </div>
+
+                        <!-- Recommendations list dynamic container -->
+                        <div class="space-y-3" id="persona-checklist">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- QUICK REFERENCE MATRIX -->
+        <div id="quick-directory" class="bg-white rounded-3xl border border-tmGray/40 shadow-lg p-6 sm:p-8">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 border-b border-slate-100 pb-4">
+                <div>
+                    <span class="bg-tmMaroon/10 text-tmMaroon px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest inline-block mb-2">Groups Directory</span>
+                    <h2 class="text-3xl font-black text-tmBlue">Quick Reference</h2>
+                    <p class="text-xs text-slate-500 mt-1">
+                        Use this unified WhatsApp Groups sheet to easily find, filter, and join standard District 226 Community Groups.
+                    </p>
+                </div>
+                <div class="flex items-center gap-2 font-sans">
+                    <button onclick="filterDirectory('all')" id="filter-all" class="px-3.5 py-1.5 rounded-lg text-xs font-black bg-tmBlue text-white transition">All</button>
+                    <button onclick="filterDirectory('admin')" id="filter-admin" class="px-3.5 py-1.5 rounded-lg text-xs font-extrabold bg-slate-100 hover:bg-slate-200 text-slate-700 transition">Admin Only</button>
+                    <button onclick="filterDirectory('open')" id="filter-open" class="px-3.5 py-1.5 rounded-lg text-xs font-extrabold bg-slate-100 hover:bg-slate-200 text-slate-700 transition">Open Forums</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="matrix-grid">
+                
+                <!-- Group Item 1 -->
+                <div class="bg-slate-50 hover:bg-slate-100 border border-slate-200 p-4 rounded-2xl flex flex-col justify-between transition duration-200 matrix-item admin-only">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-tmMaroon text-white text-[9px] font-black uppercase px-2 py-0.5 rounded">Admin Only</span>
+                            <span class="text-xs font-mono text-slate-400">#01</span>
+                        </div>
+                        <h4 class="font-extrabold text-sm text-tmBlue flex items-center gap-2">
+                            <i data-lucide="megaphone" class="w-4 h-4 text-tmMaroon shrink-0"></i>
+                            Community Announcements
+                        </h4>
+                        <p class="text-[11px] text-slate-500 leading-relaxed mt-2">
+                           Announcement channel where District posts updates, schedules, and event info by DPRM Team.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200/60 flex justify-between items-center text-[10px]">
+                        <span class="text-slate-400">Owner: <strong class="text-tmBlue">District PR Office Only</strong></span>
+                        <span class="font-black text-tmMaroon uppercase tracking-wide">Announcement Feed</span>
+                    </div>
+                </div>
+
+                <!-- Group Item 2 -->
+                <div class="bg-slate-50 hover:bg-slate-100 border border-slate-200 p-4 rounded-2xl flex flex-col justify-between transition duration-200 matrix-item admin-only">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-tmBlue text-tmYellow text-[9px] font-black uppercase px-2 py-0.5 rounded">Moderated</span>
+                            <span class="text-xs font-mono text-slate-400">#02</span>
+                        </div>
+                        <h4 class="font-extrabold text-sm text-tmBlue flex items-center gap-2">
+                            <i data-lucide="users" class="w-4 h-4 text-tmBlue shrink-0"></i>
+                            General Group (Division PR Focals Manage)
+                        </h4>
+                        <p class="text-[11px] text-slate-500 leading-relaxed mt-2">
+                            Allows Division Directors and Division PR Focals to post Division, Area, and Club events on behalf of clubs
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200/60 flex justify-between items-center text-[10px]">
+                        <span class="text-slate-400">Owner: <strong class="text-tmBlue">Division Directors</strong></span>
+                        <span class="font-black text-tmMaroon uppercase tracking-wide">Club Events for Wider D226 Members</span>
+                    </div>
+                </div>
+
+                <!-- Group Item 3 -->
+                <div class="bg-slate-50 hover:bg-slate-100 border border-slate-200 p-4 rounded-2xl flex flex-col justify-between transition duration-200 matrix-item open-forum">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-emerald-700 text-white text-[9px] font-black uppercase px-2 py-0.5 rounded">Open Forum</span>
+                            <span class="text-xs font-mono text-slate-400">#03</span>
+                        </div>
+                        <h4 class="font-extrabold text-sm text-tmBlue flex items-center gap-2">
+                            <i data-lucide="git-branch" class="w-4 h-4 text-emerald-700 shrink-0"></i>
+                            Division Specific WhatsApp Groups
+                        </h4>
+                        <p class="text-[11px] text-slate-500 leading-relaxed mt-2">
+                            Collaboration space open to Division members for general networking, joint meetings, and Division initiatives.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200/60 flex justify-between items-center text-[10px]">
+                        <span class="text-slate-400">Owner: <strong class="text-tmBlue">Division Council</strong></span>
+                        <span class="font-black text-emerald-700 uppercase tracking-wide">Open Division Group</span>
+                    </div>
+                </div>
+
+                <!-- Group Item 4 -->
+                <div class="bg-slate-50 hover:bg-slate-100 border border-slate-200 p-4 rounded-2xl flex flex-col justify-between transition duration-200 matrix-item admin-only">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-[#002f4a] text-white text-[9px] font-black uppercase px-2 py-0.5 rounded">Open Forum - Officers Only</span>
+                            <span class="text-xs font-mono text-slate-400">#04</span>
+                        </div>
+                        <h4 class="font-extrabold text-sm text-tmBlue flex items-center gap-2">
+                            <i data-lucide="award" class="w-4 h-4 text-tmBlue shrink-0"></i>
+                            Officer Specific WhatsApp Group
+                        </h4>
+                        <p class="text-[11px] text-slate-500 leading-relaxed mt-2">
+                            Exclusively created for club officers to exchange ideas and best practices. Seek help from fellow officers and collaborate.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200/60 flex justify-between items-center text-[10px]">
+                        <span class="text-slate-400">Owner: <strong class="text-tmBlue">Area Director</strong></span>
+                        <span class="font-black text-[#002f4a] uppercase tracking-wide">Club Officer Interactions</span>
+                    </div>
+                </div>
+
+                <!-- Group Item 5 -->
+                <div class="bg-slate-50 hover:bg-slate-100 border border-slate-200 p-4 rounded-2xl flex flex-col justify-between transition duration-200 matrix-item open-forum">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-indigo-700 text-white text-[9px] font-black uppercase px-2 py-0.5 rounded">Open Forum</span>
+                            <span class="text-xs font-mono text-slate-400">#05</span>
+                        </div>
+                        <h4 class="font-extrabold text-sm text-tmBlue flex items-center gap-2">
+                            <i data-lucide="globe" class="w-4 h-4 text-indigo-700 shrink-0"></i>
+                            Geography Specific Groups
+                        </h4>
+                        <p class="text-[11px] text-slate-500 leading-relaxed mt-2">
+                            Open channels governed by the District Team. Ideal for members sharing all Toastmasters events.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200/60 flex justify-between items-center text-[10px]">
+                        <span class="text-slate-400">Owner: <strong class="text-tmBlue">District Team</strong></span>
+                        <span class="font-black text-indigo-700 uppercase tracking-wide">All Access</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Brand Conforming Footer -->
+    <footer class="w-full bg-tmBlue border-t border-tmGray/30 text-white px-6 py-4 mt-8 z-40">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
+            <div class="flex items-center gap-3">
+                <div class="bg-tmMaroon text-[#F2DF74] p-1.5 rounded-lg flex items-center justify-center border border-[#A9B2B1]/30">
+                    <i data-lucide="award" class="w-4 h-4"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold">District 226 Onboarding WhatsApp Community Guidelines</span>
+                    <span class="text-tmGray mt-1 text-[10px]">3 Cultures 1 Community — #LifelongLearningLimitlessLeadership</span>
+                </div>
+            </div>
+            <div class="text-tmGray text-[10px] text-center md:text-right">
+                Serving Members across Maharashtra State
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const pathways = {
+            1: {
+                title: "District Key Announcements",
+                desc: "This option grants access to updates only from District.",
+                tip: "Only the District PR Office posts here ensuring completely noise-free updates.",
+                highlights: { announce: true, general: false, division: false, geography: false, officer: false }
+            },
+            2: {
+                title: "Key Information + Geography Open Reach",
+                desc: "Perfect choice for members who want official District updates and also want to network with a larger geographic community.",
+                tip: "Join only if you want to engage with Toastmasters within your geographic area. This group is open for general discussions.",
+                highlights: { announce: true, general: false, division: false, geography: true, officer: false }
+            },
+            3: {
+                title: "Key Information + Club Events",
+                desc: "Perfect choice for members eager to visit District 226 special club meetings without getting flooded by daily member discussions.",
+                tip: "Only the Division PR Office posts here, though possible many messages but admin only group.",
+                highlights: { announce: true, general: true, division: false, geography: false, officer: false }
+            },
+            4: {
+                title: "Key Information + Division Collaborations",
+                desc: "Perfect choice for members collaborating with clubs within Division",
+                tip: "Joining ensures you are updated on divisional initiatives and opportunities.",
+                highlights: { announce: true, general: false, division: true, geography: false, officer: false }
+            },
+            5: {
+                title: "Key Information + Officer Exchanges",
+                desc: "Perfect choice for members who are club officers and want to exchange ideas with fellow officers.",
+                tip: "Contact your respective Area Director to gain immediate entry into your role specific officer WhatsApp Group.",
+                highlights: { announce: true, general: false, division: false, geography: false, officer: true }
+            }
+        };
+
+        const personas = {
+            'member-standard': {
+                title: "MEMBER (Minimal District Announcements)",
+                tip: "This setup provides the essential framework for general Toastmasters. Keeps notifications completely streamlined.",
+                checklist: [
+                    { group: "Community Announcement", status: "Highly Recommended", desc: "For key updates from District 226 with zero message clutter.", icon: "megaphone", joined: true },
+                    { group: "General Group", status: "Optional", desc: "For District 226 club events for wider audience (eg Educational Sessions).", icon: "users", joined: false },
+                    { group: "Geography Specific Group", status: "Optional", desc: "Only join if interested in general discussions.", icon: "globe", joined: false }
+                ]
+            },
+            'member-geography': {
+                title: "MEMBER (Geography Reach)",
+                tip: "Recommended for members seeking to visit other clubs or cross-promote Toastmasters activities inside the geographic area.",
+                checklist: [
+                    { group: "Community Announcement", status: "Highly Recommended", desc: "For key updates from District 226 with zero message clutter.", icon: "megaphone", joined: true },
+                    { group: "Geography Specific Group", status: "Highly Recommended", desc: "For wider community interactions.", icon: "globe", joined: true },
+                    { group: "General Group", status: "Optional", desc: "For District 226 club events for wider audience (eg Educational Sessions).", icon: "users", joined: false }
+                ]
+            },
+            'member-explore': {
+                title: "MEMBER (Active Explorer)",
+                tip: "Great configuration for members who actively travel, seek speech slots, and want detailed event listings.",
+                checklist: [
+                    { group: "Community Announcement", status: "Highly Recommended", desc: "For key updates from District 226 with zero message clutter.", icon: "megaphone", joined: true },
+                    { group: "General Group", status: "Highly Recommended", desc: "For District 226 club events for wider audience (eg Educational Sessions).", icon: "users", joined: true },
+                    { group: "Geography Specific Group", status: "Highly Recommended", desc: "For wider community interactions.", icon: "globe", joined: true }
+                ]
+            },
+            'growth-officer': {
+                title: "PRES, VPE, VPM, VPPR",
+                tip: "Vital setup for core growth officers. Helps you stay updated on District announcements and promote your own events.",
+                checklist: [
+                    { group: "Community Announcement", status: "Mandatory", desc: "For key updates from District 226 with zero message clutter.", icon: "megaphone", joined: true },
+                    { group: "General Group", status: "Highly Recommended", desc: "For District 226 club events for wider audience (eg Educational Sessions).", icon: "users", joined: true },
+                    { group: "Division Specific Group", status: "Mandatory", desc: "To collaborate directly with your Division Members.", icon: "git-branch", joined: true },
+                    { group: "Officer Specific Group", status: "Mandatory", desc: "For role-specific best practices and updates.", icon: "award", joined: true },
+                    { group: "Geography Specific Group", status: "Highly Recommended", desc: "For wider community interactions.", icon: "globe", joined: true }
+                ]
+            },
+            'admin-officer': {
+                title: "SEC, TRE, SAA",
+                tip: "Enables administrative officers to maintain seamless operations without getting overwhelmed by general promotional noise.",
+                checklist: [
+                    { group: "Community Announcement", status: "Mandatory", desc: "For key updates from District 226 with zero message clutter.", icon: "megaphone", joined: true },
+                    { group: "General Group", status: "Highly Recommended", desc: "For District 226 club events for wider audience (eg Educational Sessions).", icon: "users", joined: true },
+                    { group: "Division Specific Group", status: "Mandatory", desc: "To collaborate directly with your Division Members.", icon: "git-branch", joined: true },
+                    { group: "Officer Specific Group", status: "Mandatory", desc: "For role-specific best practices and updates.", icon: "award", joined: true }
+                ]
+            },
+            'district-officer': {
+                title: "DISTRICT OFFICER",
+                tip: "Gives District Officers high-level oversight across standard operations and divisions.",
+                checklist: [
+                    { group: "Community Announcement", status: "Mandatory", desc: "For key updates from District 226 with zero message clutter.", icon: "megaphone", joined: true },
+                    { group: "General Group", status: "Mandatory", desc: "For District 226 club events for wider audience (eg Educational Sessions).", icon: "users", joined: true },
+                    { group: "Division Specific Group", status: "Mandatory", desc: "To collaborate directly with your Division Members.", icon: "git-branch", joined: true },
+                    { group: "Geography Specific Group", status: "Optional", desc: "To communicate with members in your geography.", icon: "globe", joined: true }
+                ]
+            }
+        };
+
+        let selectedPersonaId = 'member-standard';
+
+        /* INITIALIZER */
+        window.onload = function() {
+            lucide.createIcons();
+            selectPathway(1);
+            setPersona('member-standard');
+        };
+
+        /* JOIN PATHWAY INTERACTIONS */
+        function selectPathway(num) {
+            // Reset active style classes
+            for (let i = 1; i <= 5; i++) {
+                const btn = document.getElementById(`pathway-btn-${i}`);
+                if (btn) {
+                    btn.className = "w-full text-left p-4 rounded-2xl border border-slate-200 hover:border-tmMaroon transition flex items-center gap-4";
+                    const badge = btn.querySelector('span');
+                    if (badge) badge.className = "w-6 h-6 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center font-black text-xs";
+                }
+            }
+
+            // Highlighting chosen scenario button
+            const activeBtn = document.getElementById(`pathway-btn-${num}`);
+            if (activeBtn) {
+                activeBtn.className = "w-full text-left p-4 rounded-2xl border-2 border-tmMaroon bg-tmMaroon/5 transition flex items-center gap-4 shadow-md";
+                const activeBadge = activeBtn.querySelector('span');
+                if (activeBadge) activeBadge.className = "w-6 h-6 rounded-full bg-tmMaroon text-white flex items-center justify-center font-black text-xs";
+            }
+
+            // Grab configurations data
+            const data = pathways[num];
+            document.getElementById('pathway-result-title').innerText = data.title;
+            document.getElementById('pathway-result-desc').innerText = data.desc;
+            document.getElementById('pathway-result-tip').innerText = data.tip;
+
+            // Update UI blocks opacity indicators
+            const items = ['announce', 'general', 'division', 'geography', 'officer'];
+            items.forEach(item => {
+                const block = document.getElementById(`pb-${item}`);
+                if (data.highlights[item]) {
+                    block.className = "p-3 bg-white border-2 border-tmMaroon rounded-xl flex items-center gap-3 shadow-sm opacity-100 transition duration-300";
+                } else {
+                    block.className = "p-3 bg-white border border-slate-200 rounded-xl flex items-center gap-3 opacity-30 transition duration-300";
+                }
+            });
+        }
+
+        /* PERSONA CONTROLLER */
+        function setPersona(pId) {
+            selectedPersonaId = pId;
+            const keys = Object.keys(personas);
+            keys.forEach(key => {
+                const btn = document.getElementById(`p-btn-${key}`);
+                if (btn) {
+                    btn.className = "w-full text-left p-3.5 rounded-xl border border-tmGray/20 flex items-center justify-between transition hover:border-tmYellow duration-200";
+                    const icon = btn.querySelector('i');
+                    if (icon) icon.className = "text-tmGray w-4 h-4";
+                    const txt = btn.querySelector('span');
+                    if (txt) txt.className = "text-xs font-extrabold uppercase tracking-wide text-slate-200";
+                }
+            });
+
+            // Highlight selected button
+            const activeBtn = document.getElementById(`p-btn-${pId}`);
+            if (activeBtn) {
+                activeBtn.className = "w-full text-left p-3.5 rounded-xl border border-tmMaroon bg-tmMaroon/20 flex items-center justify-between transition hover:border-tmYellow duration-200";
+                const icon = activeBtn.querySelector('i');
+                if (icon) icon.className = "text-tmYellow w-4 h-4";
+                const txt = activeBtn.querySelector('span');
+                if (txt) txt.className = "text-xs font-extrabold uppercase tracking-wide text-white";
+            }
+
+            // Populate Recommendation Checklist Details
+            const data = personas[pId];
+            document.getElementById('persona-display-title').innerText = data.title;
+
+            const listContainer = document.getElementById('persona-checklist');
+            listContainer.innerHTML = '';
+
+            data.checklist.forEach(item => {
+                const borderClass = item.joined ? "border-l-4 border-l-tmYellow bg-tmDarkBlue shadow-inner" : "bg-tmBlue/40 opacity-40";
+                const badgeClass = item.joined ? "bg-tmMaroon text-tmYellow" : "bg-tmGray text-slate-950";
+
+                const rowHtml = `
+                    <div class="p-4 rounded-xl border border-tmGray/20 flex items-start justify-between gap-3 ${borderClass} transition duration-300">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="${item.icon}" class="w-5 h-5 text-tmYellow shrink-0 mt-0.5"></i>
+                            <div>
+                                <h5 class="text-xs font-extrabold text-white uppercase tracking-wider">${item.group}</h5>
+                                <p class="text-[11px] text-slate-300 mt-1">${item.desc}</p>
+                            </div>
+                        </div>
+                        <span class="text-[9px] px-2.5 py-0.5 rounded font-black uppercase tracking-wide ${badgeClass}">${item.status}</span>
+                    </div>
+                `;
+                listContainer.innerHTML += rowHtml;
+            });
+
+            lucide.createIcons();
+        }
+
+        function filterDirectory(filterType) {
+            // Reset state
+            const buttons = ['all', 'admin', 'open'];
+            buttons.forEach(btn => {
+                const target = document.getElementById(`filter-${btn}`);
+                target.className = "px-3.5 py-1.5 rounded-lg text-xs font-extrabold bg-slate-100 hover:bg-slate-200 text-slate-700 transition";
+            });
+
+            // Active State
+            document.getElementById(`filter-${filterType}`).className = "px-3.5 py-1.5 rounded-lg text-xs font-black bg-tmBlue text-white transition";
+
+            const cards = document.querySelectorAll('.matrix-item');
+            cards.forEach(card => {
+                if (filterType === 'all') {
+                    card.style.display = 'flex';
+                } else if (filterType === 'admin') {
+                    if (card.classList.contains('admin-only')) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                } else if (filterType === 'open') {
+                    if (card.classList.contains('open-forum')) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
